@@ -1,6 +1,6 @@
 const container = document.getElementById("container");
 
-// Create a 16x16 square grid and append them to the container
+// Create a square grid and append them to the container
 function createGrid(numSquares) {
   container.innerHTML = ""; // Clear previous grid
   container.style.gridTemplateColumns = `repeat(${numSquares}, 1fr)`;
