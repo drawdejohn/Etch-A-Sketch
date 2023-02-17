@@ -11,6 +11,7 @@ function createGrid(numSquares) {
     container.appendChild(square);
   }
 }
+createGrid(16);
 
 // Add a hover event listener to each square
 const squares = document.querySelectorAll('.square');
@@ -20,5 +21,3 @@ squares.forEach(square => {
   });
 });
 
-
-createGrid(16);
