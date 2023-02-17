@@ -1,17 +1,35 @@
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-}
-  
 #container {
-    display: grid;
-    grid-gap: 0em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+	grid-gap: 1px;
+	padding: 10px;
+	width: 40vw; /* Set the width to 50% of the viewport width */
+	margin: 0 auto; /* Center the container horizontally */
+    background-color: black;
 }
+
+.square {
+    background-color: white;
+    position: relative;
+    padding-top: 100%;
+    padding: 10px;
+  }
   
-.grid-item {
-    padding: 1em;
-    border: 1px solid #ddd;
-    text-align: center;
-}
+  @media (max-width: 768px) {
+    .square {
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .square {
+      padding: 2px;
+    }
+  }
+  
+  .square::before {
+    content: "";
+    display: block;
+    margin-top: 100%;
+  }
