@@ -1,6 +1,8 @@
 # Etch-A-Sketch
-In this project, I have built a browser-based sketchpad using HTML, CSS, and JavaScript to demonstrate my skills in DOM manipulation.
+## Overview
+Etch-A-Sketch is a browser-based sketchpad that allows users to create art by hovering their mouse over a grid of squares. The color of each square changes with each pass, creating a unique and colorful design. The app is built using HTML, CSS, and JavaScript, and demonstrates the developer's skills in DOM manipulation. The project includes a "New Grid" button that allows users to create a new grid with a customizable number of squares per side, with a maximum limit of 100 squares to prevent performance issues.
 
+## Live app
 You can try the live app [here](https://edwardjohnfelicia.github.io/Etch-A-Sketch/).
 
 ## How to use
