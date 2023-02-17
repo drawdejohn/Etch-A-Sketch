@@ -1,35 +1,17 @@
+/* Default styles */
 #container {
-	display: grid;
-	grid-template-columns: repeat(16, 1fr);
-	grid-template-rows: repeat(16, 1fr);
-	grid-gap: 1px;
-	padding: 10px;
-	width: 40vw; /* Set the width to 50% of the viewport width */
-	margin: 0 auto; /* Center the container horizontally */
-    background-color: black;
+  display: grid;
+  grid-gap: 1px;
+  padding: 10px;
+  width: 600px; /* Set a fixed width for the container */
+  height: 600px; /* Set a fixed height for the container */
+  box-sizing: border-box; /* Include padding and border in width and height calculations */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: black;
 }
-
-.square {
+  
+  .square {
     background-color: white;
     position: relative;
     padding-top: 100%;
-    padding: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .square {
-      padding: 5px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .square {
-      padding: 2px;
-    }
-  }
-  
-  .square::before {
-    content: "";
-    display: block;
-    margin-top: 100%;
   }
