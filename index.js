@@ -8,11 +8,17 @@ function createGrid(numSquares) {
   for (let i = 0; i < numSquares ** 2; i++) {
     const square = document.createElement("div");
     square.classList.add("square");
+    let passes = 0;
     square.addEventListener('mouseover', () => {
+      if (passes >= 10){
+        square.style.backgroundColor = 'black';
+      } else {
       const red = Math.floor(Math.random() * 256);
       const green = Math.floor(Math.random() * 256);
       const blue = Math.floor(Math.random() * 256);
       square.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+      passes++;
+      }
     });
     container.appendChild(square);
   }
