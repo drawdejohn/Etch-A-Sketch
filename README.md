@@ -10,8 +10,6 @@ To use the Etch-A-Sketch, simply hover your mouse over the squares to draw. The 
 
 To create a new grid, click the "New Grid" button in the top bar and enter the desired number of squares per side. The maximum number of squares is 100.
 
-To run
-
 ## Technologies used
 * HTML
 * CSS
